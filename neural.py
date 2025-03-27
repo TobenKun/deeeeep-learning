@@ -38,13 +38,10 @@ def forward(network, x): # 신호가 순방향으로 전달되는 순전파
     z2 = sigmoid(a2)
     a3 = np.dot(z2, W3) + b3
     y = identity_function(a3)
-    #y = softmax(a3)
 
     return y
 
-
-network = init_network()
-x = np.array([1.0, 0.5])
-y = forward(network, x)
+a = np.array([0.3, 2.9, 4.0])
+y = softmax(a)
 print(y)
-
+print(np.sum(y))
