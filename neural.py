@@ -9,6 +9,10 @@ def sigmoid(x):
 def identity_function(x):
     return x
 
+# 일반적으로 회귀에는 항등함수를, 분류에는 소프트맥스 함수를 사용한다
+# page 90
+
+
 def init_network():
     network = {}
     network['W1'] = np.array([[0.1, 0.3, 0.5], [0.2, 0.4, 0.6]])
