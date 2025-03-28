@@ -41,7 +41,7 @@ def forward(network, x): # 신호가 순방향으로 전달되는 순전파
 
     return y
 
-a = np.array([0.3, 2.9, 4.0])
-y = softmax(a)
-print(y)
-print(np.sum(y))
+# a = np.array([0.3, 2.9, 4.0])
+# y = softmax(a)
+# print(y)
+# print(np.sum(y))
