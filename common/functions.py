@@ -16,3 +16,6 @@ def softmax(a):
     y = exp_a / sum_exp_a
 
     return y
+
+def sum_squares_error(y, t):
+    return 0.5 * np.sum((y-t)**2)
